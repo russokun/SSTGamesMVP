@@ -6,28 +6,28 @@ const reviews = [
   {
     id: 1,
     name: 'Rafael Becerra',
-    image: 'rafaelBecerra.png',
+    image: '/src/assets/img/rafaelBecerra.png',
     text: 'Trabajo hace años dirigiendo un equipo de SST, para nuestra compañía la propuesta de SST Games es fantástica ya que sus dispositivos se adaptan  a cortas fracciones de tiempo, y nos permiten documentar fácilmente nuestras capacitaciones para cumplir la normativa vigente. Lo Recomiendo ampliamente.',
     role: ''
   },
   {
     id: 2,
     name: 'Ana Ezquivel',
-    image: 'anaEzquivel.png',
+    image: '/src/assets/img/anaEzquivel.png',
     text: 'Para mi como facilitadora de SST me ha sido muy práctico los juegos de sst games ya que no solo su diseño es un verdadero objeto de deseo, sino que sus dinámicas son simples y de alto impacto comprensibles para distintos públicos en diversos contextos ya sea personal de terreno como de oficina.',
     role: ''
   },
   {
     id: 3,
     name: 'Cristina Solorza',
-    image: 'cristinaSolorza.png',
+    image: '/src/assets/img/cristinaSolorza.png',
     text: 'Como una profesional de SST , me complace recomendar los dispostivos de SSTGAMES, son prácticos, lindos , simples y de impacto.',
     role: ''
   },
   {
     id: 4,
     name: 'Edgard Paw',
-    image: 'edgardPaw.png',
+    image: '/src/assets/img/edgardPaw.png',
     text: 'Las herramientas de sst games son de un diseño impactante, y lo mejor que todas están alineadas con nuestros sistemas de gestión, tanto en forma análoga como digital.',
     role: ''
   }
@@ -70,7 +70,7 @@ function Reviews() {
               >
                 <div className="flex items-center mb-4">
                   <img
-                    src={`${baseUrl}src/assets/img/${review.image}`}
+                    src={`${baseUrl}${review.image}`}
                     alt={review.name}
                     className="w-16 h-16 rounded-full mr-4"
                   />
