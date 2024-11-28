@@ -16,7 +16,7 @@ function Header() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl font-extrabold text-gray-800 mb-6 tracking-tight leading-tight">
             Somos <span className="text-blue-600">SSTGames</span>, Tu Maletin de herramientas ludicas para la 
-            <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text"> Prevencion en seguridad y salud en el trabajo </span> 
+            <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-transparent bg-clip-text"> Prevención en seguridad y salud en el trabajo </span> 
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             Descubre una nueva forma de capacitar a tu equipo con nuestras 
