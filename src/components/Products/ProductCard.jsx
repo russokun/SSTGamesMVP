@@ -58,7 +58,7 @@ const ProductCard = ({ product }) => {
                     </motion.button>
                 </div>
             </div>
-            <Carrousel images={product.images}  />
+            <Carrousel images={product.images} />
         </div>
     );
 }

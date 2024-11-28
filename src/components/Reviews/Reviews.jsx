@@ -6,34 +6,35 @@ const reviews = [
   {
     id: 1,
     name: 'Rafael Becerra',
-    image: '/src/assets/img/rafaelBecerra.png',
+    image: 'rafaelBecerra.png',
     text: 'Trabajo hace años dirigiendo un equipo de SST, para nuestra compañía la propuesta de SST Games es fantástica ya que sus dispositivos se adaptan  a cortas fracciones de tiempo, y nos permiten documentar fácilmente nuestras capacitaciones para cumplir la normativa vigente. Lo Recomiendo ampliamente.',
     role: ''
   },
   {
     id: 2,
     name: 'Ana Ezquivel',
-    image: '/src/assets/img/anaEzquivel.png',
+    image: 'anaEzquivel.png',
     text: 'Para mi como facilitadora de SST me ha sido muy práctico los juegos de sst games ya que no solo su diseño es un verdadero objeto de deseo, sino que sus dinámicas son simples y de alto impacto comprensibles para distintos públicos en diversos contextos ya sea personal de terreno como de oficina.',
     role: ''
   },
   {
     id: 3,
     name: 'Cristina Solorza',
-    image: '/src/assets/img/cristinaSolorza.png',
+    image: 'cristinaSolorza.png',
     text: 'Como una profesional de SST , me complace recomendar los dispostivos de SSTGAMES, son prácticos, lindos , simples y de impacto.',
     role: ''
   },
   {
     id: 4,
     name: 'Edgard Paw',
-    image: '/src/assets/img/edgardPaw.png',
+    image: 'edgardPaw.png',
     text: 'Las herramientas de sst games son de un diseño impactante, y lo mejor que todas están alineadas con nuestros sistemas de gestión, tanto en forma análoga como digital.',
     role: ''
   }
 ];
 
 function Reviews() {
+  const baseUrl = import.meta.env.BASE_URL;
   const [currentPage, setCurrentPage] = useState(0);
   const reviewsPerPage = 2;
   const totalPages = Math.ceil(reviews.length / reviewsPerPage);
@@ -58,7 +59,7 @@ function Reviews() {
           Qué dicen de nuestros juegos 
         </h2>
         <div className="relative max-w-4xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
             {currentReviews.map(review => (
               <motion.div
                 key={review.id}
@@ -69,16 +70,16 @@ function Reviews() {
               >
                 <div className="flex items-center mb-4">
                   <img
-                    src={review.image}
+                    src={`${baseUrl}src/assets/img/${review.image}`}
                     alt={review.name}
-                    className="w-16 h-16 rounded-full object-cover mr-4"
+                    className="w-16 h-16 rounded-full mr-4"
                   />
                   <div>
-                    <h3 className="font-bold">{review.name}</h3>
-                    <p className="text-gray-600 text-sm">{review.role}</p>
+                    <h3 className="text-xl font-bold">{review.name}</h3>
+                    <p className="text-gray-600">{review.role}</p>
                   </div>
                 </div>
-                <p className="text-gray-700">{review.text}</p>
+                <p className="text-gray-800">{review.text}</p>
               </motion.div>
             ))}
           </div>
