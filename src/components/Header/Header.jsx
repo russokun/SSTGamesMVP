@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="min-h-screen">
       {/* Memory Game Section */}
-      <div className="bg-blue-50 py-16">
+      <div className="bg-[#acfdf9] py-16">
         <div className="container mx-auto px-4">
           <MemoryGame />
         </div>

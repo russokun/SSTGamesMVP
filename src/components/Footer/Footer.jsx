@@ -16,7 +16,7 @@ function Footer() {
           <div className="md:col-span-1 flex flex-col justify-center items-center">
             <div className="text-center mb-8">
               <a
-                href="https://wa.me/1234567890"
+                href="https://wa.me/56988451163"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center bg-green-500 text-white py-3 px-6 rounded-full text-lg font-semibold hover:bg-green-600 transition-colors"
@@ -30,14 +30,14 @@ function Footer() {
             <div className="text-center">
               <h4 className="font-bold mb-4">Síguenos</h4>
               <div className="flex justify-center space-x-4 mb-6">
-                <a href="#" className="text-2xl hover:text-blue-400"><FaFacebook /></a>
-                <a href="#" className="text-2xl hover:text-pink-400"><FaInstagram /></a>
+                <a href="https://www.facebook.com/jrussop/" className="text-2xl hover:text-blue-400"><FaFacebook /></a>
+                <a href="https://www.instagram.com/javrussop/?hl=es" className="text-2xl hover:text-pink-400"><FaInstagram /></a>
               </div>
               
               <div className="text-center">
                 <h4 className="font-bold mb-2">DevBy</h4>
                 <a 
-                  href="https://www.linkedin.com/in/your-profile" 
+                  href="https://www.linkedin.com/in/agustinrussodev/" 
                   target="_blank" 
                   rel="noopener noreferrer"
                   className="text-2xl hover:text-blue-400"

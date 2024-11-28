@@ -1,39 +1,46 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Carrousel = ({ images }) => {
-    const [currentSlide, setCurrentSlide] = useState(0);
+function Carrousel({ images }) {
+    const [currentIndex, setCurrentIndex] = useState(0);
 
-    const nextSlide = () => {
-        setCurrentSlide((prev) => (prev + 1) % images.length);
+    useEffect(() => {
+        const interval = setInterval(() => {
+            nextImage();
+        }, 2000);
+
+        return () => clearInterval(interval);
+    }, [currentIndex]);
+
+    const nextImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     };
 
-    const prevSlide = () => {
-        setCurrentSlide((prev) => (prev - 1 + images.length) % images.length);
+    const prevImage = () => {
+        setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
     };
 
     return (
         <div className="relative">
-            <div className="overflow-hidden">
-                {images.map((image, index) => (
-                    <div key={index} className={`transition-transform duration-500 ${index === currentSlide ? 'translate-x-0' : 'translate-x-full'}`}>
-                        <img src={image} alt={`Imagen ${index + 1}`} className="object-cover h-32 w-full" />
-                    </div>
-                ))}
-            </div>
-            <div className="absolute top-1/2 transform -translate-y-1/2 left-0">
-                <button onClick={prevSlide} className="bg-black text-white p-2 rounded-full hover:bg-white hover:text-black">
-                    <FaChevronLeft />
-                </button>
-            </div>
-            <div className="absolute top-1/2 transform -translate-y-1/2 right-0">
-                <button onClick={nextSlide} className="bg-black text-white p-2 rounded-full hover:bg-white hover:text-black">
-                    <FaChevronRight />
-                </button>
-            </div>
+            <img
+                src={images[currentIndex]}
+                alt={`Slide ${currentIndex}`}
+                className="w-full h-auto object-cover rounded-lg transition-transform duration-500 ease-in-out"
+            />
+            <button
+                onClick={prevImage}
+                className="absolute top-1/2 left-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
+            >
+                <FaChevronLeft />
+            </button>
+            <button
+                onClick={nextImage}
+                className="absolute top-1/2 right-4 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
+            >
+                <FaChevronRight />
+            </button>
         </div>
     );
-};
+}
 
 export default Carrousel;

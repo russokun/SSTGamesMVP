@@ -43,7 +43,7 @@ function ContactForm() {
         </div>
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-3 px-6 rounded-lg font-semibold hover:bg-blue-700 transition-colors transform hover:scale-105 duration-200"
+          className="w-full bg-white text-black hover:bg-slate-800 hover:text-white  py-3 px-6 rounded-lg font-semibold transition-colors transform hover:scale-105 duration-200"
         >
           Quiero!
         </button>

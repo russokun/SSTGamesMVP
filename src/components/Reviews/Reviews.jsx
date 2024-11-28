@@ -5,31 +5,31 @@ import { FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 const reviews = [
   {
     id: 1,
-    name: 'Andrea López',
-    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjOWNhM2FmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+QUw8L3RleHQ+PC9zdmc+',
-    text: 'SSTGames transformó nuestras capacitaciones en dinámicas divertidas y efectivas.',
-    role: 'Gerente de RRHH'
+    name: 'Rafael Becerra',
+    image: '/src/assets/img/rafaelBecerra.png',
+    text: 'Trabajo hace años dirigiendo un equipo de SST, para nuestra compañía la propuesta de SST Games es fantástica ya que sus dispositivos se adaptan  a cortas fracciones de tiempo, y nos permiten documentar fácilmente nuestras capacitaciones para cumplir la normativa vigente. Lo Recomiendo ampliamente.',
+    role: ''
   },
   {
     id: 2,
-    name: 'Carlos Martínez',
-    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjOWNhM2FmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+Q008L3RleHQ+PC9zdmc+',
-    text: 'Una herramienta innovadora que ha mejorado significativamente nuestro programa de seguridad.',
-    role: 'Supervisor de Seguridad'
+    name: 'Ana Ezquivel',
+    image: '/src/assets/img/anaEzquivel.png',
+    text: 'Para mi como facilitadora de SST me ha sido muy práctico los juegos de sst games ya que no solo su diseño es un verdadero objeto de deseo, sino que sus dinámicas son simples y de alto impacto comprensibles para distintos públicos en diversos contextos ya sea personal de terreno como de oficina.',
+    role: ''
   },
   {
     id: 3,
-    name: 'María Sánchez',
-    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48Y2lyY2xlIGN4PSI1MCIgY3k9IjUwIiByPSI1MCIgZmlsbD0iI2YzZjRmNiIvPjx0ZXh0IHg9IjUwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjIwIiBmaWxsPSIjOWNhM2FmIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiBkeT0iLjNlbSI+TVM8L3RleHQ+PC9zdmc+',
-    text: 'Los empleados están más comprometidos con la seguridad desde que implementamos SSTGames.',
-    role: 'Coordinadora de SST'
+    name: 'Cristina Solorza',
+    image: '/src/assets/img/cristinaSolorza.png',
+    text: 'Como una profesional de SST , me complace recomendar los dispostivos de SSTGAMES, son prácticos, lindos , simples y de impacto.',
+    role: ''
   },
   {
     id: 4,
-    name: 'Juan Pérez',
-    image: 'data:image/svg+xml;base64,PHN2ZyB3aWR',
-    text: 'La plataforma de SSTGames ha sido una excelente inversión para nuestra empresa.',
-    role: 'Gerente General'
+    name: 'Edgard Paw',
+    image: '/src/assets/img/edgardPaw.png',
+    text: 'Las herramientas de sst games son de un diseño impactante, y lo mejor que todas están alineadas con nuestros sistemas de gestión, tanto en forma análoga como digital.',
+    role: ''
   }
 ];
 
@@ -52,10 +52,10 @@ function Reviews() {
   );
 
   return (
-    <section className="py-16">
+    <section className="py-16 bg-[#F1D600]">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">
-          Lo que dicen nuestros usuarios
+          Qué dicen de nuestros juegos 
         </h2>
         <div className="relative max-w-4xl mx-auto">
           <div className="grid md:grid-cols-2 gap-8">
@@ -86,13 +86,13 @@ function Reviews() {
           <div className="flex justify-center mt-8 space-x-4">
             <button
               onClick={prevPage}
-              className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+              className="bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
             >
               <FaChevronLeft />
             </button>
             <button
               onClick={nextPage}
-              className="bg-blue-500 text-white p-2 rounded-full hover:bg-blue-600"
+              className="bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
             >
               <FaChevronRight />
             </button>
