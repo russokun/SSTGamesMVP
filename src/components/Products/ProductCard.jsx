@@ -58,7 +58,9 @@ const ProductCard = ({ product }) => {
                     </motion.button>
                 </div>
             </div>
-            <Carrousel images={product.images} />
+            <div className="max-w-full overflow-hidden">
+                <Carrousel images={product.images} className=" h-80 object-contain mb-4 md:mb-0 md:mr-4" />
+            </div>
         </div>
     );
 }
