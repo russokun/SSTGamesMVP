@@ -8,7 +8,7 @@ const products = [
     logo: 'landing/risk castle cuadrado/7.png',
     description1: (
       <>
-        Risk Castle es un juego para 6 jugadores que fomenta la metacognición. Incluye 182 tarjetas de bloques de construcción por color (uno por jugador) y 40 tarjetas de casos que representan 4 tipos de demandas laborales: mentales, emocionales, equilibrio trabajo-vida y físicas (10 de cada tipo).
+        Risk Castle es un juego para 6 jugadores que fomenta la metacognición. Incluye 182 tarjetas de bloques de construcción por color (una por jugador) y 40 tarjetas de casos que representan 4 tipos de demandas laborales: mentales, emocionales, equilibrio trabajo-vida y físicas (10 de cada tipo).
       </>
     ),
     description2: (
@@ -46,7 +46,7 @@ const products = [
     logo: 'landing/el accidente fue/el accidente fue.png',
     description1: (
       <>
-        El Accidente Fue es una dinámica para 7 jugadores que promueve la conciencia sobre el uso de equipos de protección personal (EPP). Cada jugador recibe un mazo con 7 elementos de seguridad, mientras el juego incluye un total de 133 tarjetas: 84 con casos reales de accidentes por no usar EPP y 49 con elementos de seguridad.
+        Juego para 7 jugadores. Cada jugador tiene un mazo con 7 elementos de seguridad. Trae 84 tarjetas con casos de accidentes reales por no uso de elementos EPP(Equipo de Protección Personal). 49 tarjetas de elementos, 133 tarjetas totales.
       </>
     ),
     description2: (
@@ -84,12 +84,12 @@ const products = [
     logo: 'landing/happybreak/logo.png',
     description1: (
       <>
-        HappyBreak Serious Game es un juego diseñado para desarrollar la salud mental y emocional. Se puede jugar como juego de mesa para 7 personas o en formato taller para hasta 50 participantes.
+        Juego para desarrollar la salud mental y emocional para 7 jugadores en modo juego de mesa o hasta 50 personas en formato taller. El juego se inspira en la metáfora de que somos "baristas de la cafetería de la vida" y tenemos que procesar 7 cafés o acciones intencionadas de felicidad y bienestar.
       </>
     ),
     description2: (
       <>
-        La metáfora central es que somos "baristas" que procesan 7 "cafés" o acciones intencionadas para promover felicidad y bienestar. Basado en investigaciones de expertos como Martin Seligman (psicología positiva), Tal Ben Shahar (Harvard) y Sonja Lyubomirsky (U. de California), el juego destaca que nuestras acciones pueden influir en el 40% de nuestra felicidad subjetiva.
+        El juego es Basado en investigaciones de expertos como Martin Seligman (psicología positiva), Tal Ben Shahar (Harvard) y Sonja Lyubomirsky (U. de California), el juego destaca que nuestras acciones pueden influir en el 40% de nuestra felicidad subjetiva.
       </>
     ),
     features: [
