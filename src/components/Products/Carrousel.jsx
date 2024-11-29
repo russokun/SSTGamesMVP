@@ -21,24 +21,26 @@ function Carrousel({ images, className }) {
     };
 
     return (
-        <div className={`relative ${className}`}>
-            <img
-    src={images[currentIndex]}
-    alt={`Slide ${currentIndex}`}
-    className="w-full h-full object-fill rounded-lg transition-transform duration-500 ease-in-out mx-auto"
-/>
-            <button
-                onClick={prevImage}
-                className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
-            >
-                <FaChevronLeft />
-            </button>
-            <button
-                onClick={nextImage}
-                className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
-            >
-                <FaChevronRight />
-            </button>
+        <div className={`relative ${className} max-w-full max-h-96 overflow-hidden`}>
+            <div className="relative w-full h-64 md:h-80 lg:h-96">
+                <img
+                    src={images[currentIndex]}
+                    alt={`Slide ${currentIndex}`}
+                    className="w-full h-full object-contain rounded-lg transition-transform duration-500 ease-in-out"
+                />
+                <button
+                    onClick={prevImage}
+                    className="absolute top-1/2 left-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
+                >
+                    <FaChevronLeft />
+                </button>
+                <button
+                    onClick={nextImage}
+                    className="absolute top-1/2 right-0 transform -translate-y-1/2 bg-black text-white p-2 rounded-full hover:bg-white hover:text-black"
+                >
+                    <FaChevronRight />
+                </button>
+            </div>
         </div>
     );
 }
