@@ -103,7 +103,14 @@ const products = [
     ],
     originalPrice: 137,
     price: 97,
-    images: ['landing/happybreak/happybreak.png'],
+    images: ['landing/happybreak/1.png',
+      'landing/happybreak/2.png',
+      'landing/happybreak/3.png',
+      'landing/happybreak/4.png',
+      'landing/happybreak/5.png',
+      'landing/happybreak/6.png',
+
+    ],
     className: 'happybreak',
     color: ['#986710', '#F2F6FF'],
     redirectUrl: 'https://pay.hotmart.com/P92679362T?off=m48g0dz2&bid=1732661310248'
